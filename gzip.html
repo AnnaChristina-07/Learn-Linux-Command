@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gzip Command - Linux Guide</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #000000, #ffffff); /* Black and white gradient */
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            overflow-y: auto;
+            text-align: left;
+        }
+        header {
+            background: linear-gradient(90deg, #333333, #888888); /* Dark to light gradient for header */
+            color: white;
+            padding: 15px;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 12px 12px 0 0;
+            text-align: center;
+        }
+        section {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #333333; /* Dark gray for headings */
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 10px 0;
+            color: #333;
+        }
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        code, pre {
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-size: 16px;
+            display: block;
+            border-radius: 4px;
+            margin: 10px 0;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(90deg, #888888, #333333); /* Dark gradient for footer */
+            color: white;
+            font-size: 14px;
+            border-radius: 0 0 12px 12px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            color: #FF6347;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            Linux Command: gzip
+        </header>
+        
+        <section>
+            <h2>Description:</h2>
+            <p>The <code>gzip</code> command is used to compress files to reduce their size, making them easier to store and transfer.</p>
+
+            <h2>Purpose & Usage:</h2>
+            <p><strong>Purpose:</strong> Compress files into <code>.gz</code> format for storage or transmission.</p>
+            <p><strong>Usage:</strong> Commonly used in combination with <code>tar</code> for compressed archives.</p>
+
+            <h2>Examples:</h2>
+            <p><strong>Compress a file:</strong></p>
+            <pre><code>gzip myfile.txt</code></pre>
+            <p>This command compresses the <code>myfile.txt</code> file and creates a compressed file <code>myfile.txt.gz</code>.</p>
+
+            <p><strong>Compress multiple files:</strong></p>
+            <pre><code>gzip file1.txt file2.txt</code></pre>
+            <p>This command compresses both <code>file1.txt</code> and <code>file2.txt</code>, creating <code>file1.txt.gz</code> and <code>file2.txt.gz</code> respectively.</p>
+
+            <h2>Explanation:</h2>
+            <p><strong>Common Use Case:</strong> Reducing the size of log files or backups.</p>
+            <p><strong>Importance:</strong> Significantly reduces storage space for large files.</p>
+
+            <!-- Image displaying the result of compressing a file using gzip -->
+            <h2>Image Example: Compressing a File Using gzip</h2>
+            <img src="5.png" alt="Screenshot of file compression with gzip">
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Learn Linux Commands</p>
+        </footer>
+    </div>
+</body>
+</html>

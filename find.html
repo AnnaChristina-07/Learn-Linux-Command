@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Command - Linux Guide</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #000000, #ffffff); /* Black and white gradient */
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            text-align: left;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            overflow-y: auto;
+            max-height: 90vh;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        header {
+            background: linear-gradient(90deg, #333333, #888888); /* Dark to light gradient for header */
+            color: white;
+            padding: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+        }
+        section {
+            margin-top: 20px;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+        }
+        h2 {
+            color: #333333; /* Dark gray for headings */
+            margin-bottom: 15px;
+            animation: slideUp 0.8s ease-in-out;
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        p {
+            margin: 10px 0;
+        }
+        code, pre {
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-size: 16px;
+            display: block;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(90deg, #888888, #333333); /* Dark gradient for footer */
+            color: white;
+            font-size: 14px;
+            border-radius: 0 0 12px 12px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            color: #FF6347;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            Linux Command: Find
+        </header>
+        
+        <section>
+            <h2>Description:</h2>
+            <p>
+                The <code>find</code> command is used to search for files and directories within a directory hierarchy. 
+                It allows users to specify search criteria such as:
+            </p>
+            <ul>
+                <li><strong>Filename:</strong> Search for files by name or pattern.</li>
+                <li><strong>Type:</strong> Specify whether to find files, directories, or links.</li>
+                <li><strong>Permissions:</strong> Locate files with specific permission settings.</li>
+                <li><strong>Modification Time:</strong> Find files based on their last modified date.</li>
+            </ul>
+
+            <h2>Purpose & Usage:</h2>
+            <p>
+                <strong>Purpose:</strong> To search for files or directories based on various attributes like name, size, 
+                and modification time.
+            </p>
+            <p>
+                <strong>Usage:</strong> The command enables system administrators to quickly locate specific files and 
+                even perform actions like moving or deleting them directly.
+            </p>
+
+            <h2>Examples:</h2>
+            <p><strong>Find all .txt files in the /home directory:</strong></p>
+            <pre><code>find /home/user/ -type f -name "*.txt"</code></pre>
+            <p>
+                This command searches for files (<code>-type f</code>) in the <code>/home/user</code> directory 
+                that have the <code>.txt</code> extension.
+            </p>
+
+            <p><strong>Find files modified in the last 7 days:</strong></p>
+            <pre><code>find /path/to/dir -mtime -7</code></pre>
+            <p>
+                This command lists files in <code>/path/to/dir</code> that were modified in the last 7 days. 
+                The <code>-mtime</code> flag accepts time in days.
+            </p>
+
+            <h2>Explanation:</h2>
+            <p>
+                <strong>Common Use Case:</strong> Searching for files across a large file system based on patterns, 
+                timestamps, or permissions.
+            </p>
+            <p>
+                <strong>Importance:</strong> The <code>find</code> command is an essential tool for system 
+                administrators and power users to locate files efficiently and automate repetitive tasks.
+            </p>
+
+            <h2>Image Example:</h2>
+            <img src="find.jpg" alt="Screenshot of the find command output">
+        </section>
+
+        <footer>
+        <p>&copy; 2025 Learn Linux Commands
+           
+        </p>
+    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ps Command - Linux Guide</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #000000, #ffffff); /* Black and white gradient */
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            overflow-y: auto;
+            text-align: left;
+        }
+        header {
+            background: linear-gradient(90deg, #333333, #888888); /* Dark to light gradient for header */
+            color: white;
+            padding: 15px;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 12px 12px 0 0;
+            text-align: center;
+        }
+        section {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #333333; /* Dark gray for headings */
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 10px 0;
+            color: #333;
+        }
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        code, pre {
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-size: 16px;
+            display: block;
+            border-radius: 4px;
+            margin: 10px 0;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(90deg, #888888, #333333); /* Dark gradient for footer */
+            color: white;
+            font-size: 14px;
+            border-radius: 0 0 12px 12px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            color: #FF6347;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            Linux Command: ps
+        </header>
+        
+        <section>
+            <h2>Description:</h2>
+            <p>The <code>ps</code> command is used to display information about running processes on a system. It shows details such as process IDs, user names, CPU and memory usage, and the command that started the process.</p>
+
+            <h2>Purpose & Usage:</h2>
+            <p><strong>Purpose:</strong> To monitor system processes, their status, and resource usage.</p>
+            <p><strong>Usage:</strong> System administrators use this command to track processes, troubleshoot system performance, and manage running tasks.</p>
+
+            <h2>Examples:</h2>
+            <p><strong>Show all running processes:</strong></p>
+            <pre><code>ps aux</code></pre>
+            <p>This command lists all running processes on the system along with their details, such as CPU and memory usage.</p>
+
+            <p><strong>Show processes for a specific user:</strong></p>
+            <pre><code>ps -u username</code></pre>
+            <p>This command filters the processes to only show those that belong to the specified user.</p>
+
+            <h2>Explanation:</h2>
+            <p><strong>Common Use Case:</strong> The <code>ps</code> command is typically used to monitor system health by listing all active processes and checking for resource-heavy tasks that could impact performance.</p>
+            <p><strong>Importance:</strong> This command is essential for system administrators to manage and troubleshoot system processes, allowing them to ensure smooth system performance and resolve any issues that may arise.</p>
+
+            <!-- Image displaying the result of using ps -->
+            <h2>Image Example: Using ps to Display Running Processes</h2>
+            <img src="ps.png" alt="Screenshot of ps command showing running processes">
+
+        </section>
+ <footer>
+            <p>&copy; 2025 Learn Linux Commands</p>
+        </footer>
+
+    </div>
+</body>
+</html>
